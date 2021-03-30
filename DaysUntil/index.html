@@ -1,0 +1,16 @@
+<html>
+    <body>
+      <h2 id="daysUntil"> </h2>
+      <iframe src="https://giphy.com/embed/rVbAzUUSUC6dO" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <script>
+          today=new Date();
+          var movingDay =new Date(today.getFullYear(), 5, 5);
+
+          var one_day=1000*60*60*24;
+          const days = Math.ceil((movingDay.getTime()-today.getTime())/(one_day));
+
+          document.getElementById("daysUntil");
+          daysUntil.innerHTML = `Days Until Move Out: ${days.toString()}!!`;      
+      </script>
+    </body>
+</html>
